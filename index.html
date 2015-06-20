@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>BkCalendar by nonsava</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/nonsava/BkCalendar">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/nonsava/BkCalendar/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/nonsava/BkCalendar/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>BkCalendar</h1>
+          <p>Becky!でiCalendar（.icsファイル）が添付されたメールを表示したときに、内容を簡易的にポップアップウィンドウに表示するプラグイン</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/nonsava">nonsava</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="bkcalendar" class="anchor" href="#bkcalendar" aria-hidden="true"><span class="octicon octicon-link"></span></a>BkCalendar</h1>
+
+<p><a href="http://www.rimarts.co.jp/becky-j.htm">Becky!</a>で<a href="https://tools.ietf.org/html/rfc5545">iCalendar</a>（.icsファイル）が添付されたメールを表示したときに、内容を簡易的にポップアップウィンドウに表示するプラグインです。</p>
+
+<h2>
+<a id="概要" class="anchor" href="#%E6%A6%82%E8%A6%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>概要</h2>
+
+<ul>
+<li><p>iCalendarが添付されたメールを表示している間、ポップアップウィンドウを表示します。邪魔にならないよう、タイトルバーなし、細枠としています。</p></li>
+<li><p>ポップアップウィンドウは移動やサイズ変更できます。位置やサイズはBecky!終了時に保持され、再起動後に復元されます。</p></li>
+<li>iCalendarの次の内容を表示します。
+
+<ul>
+<li>
+<strong>目的:</strong> 招待/キャンセル/返信のいずれかを表示します。返信のときはさらに、承諾/辞退/参加未定を表示します。</li>
+<li>
+<strong>日時:</strong> 予定の開始日時/終了日時を表示します。</li>
+<li>
+<strong>場所:</strong> 指定場所を表示します。</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="バイナリファイル" class="anchor" href="#%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>バイナリファイル</h2>
+
+<p>バイナリファイルは<a href="https://github.com/nonsava/binaries/tree/master/BkCalendar">binariesリポジトリ</a>から入手してください。</p>
+
+<h2>
+<a id="インストール方法" class="anchor" href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>インストール方法</h2>
+
+<p>Becky!のプラグインフォルダにBkCalendar.dllを入れてください。
+プラグインフォルダはBecky!のインストールディレクトリの下にあります。</p>
+
+<pre><code>例) C:\Program Files\RimArts\B2\PlugIns\
+</code></pre>
+
+<h2>
+<a id="アンインストール方法" class="anchor" href="#%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>アンインストール方法</h2>
+
+<p>Becky!のプラグインフォルダからBkCalendar.dllを削除してください。
+ユーザーごとのプラグインフォルダに保存されている設定ファイルBkCalendar.iniを削除してください。</p>
+
+<pre><code>例) C:\Program Files\RimArts\B2\Users\&lt;ユーザー名&gt;\PlugIns\BkCalendar.ini
+</code></pre>
+
+<h2>
+<a id="ビルド方法" class="anchor" href="#%E3%83%93%E3%83%AB%E3%83%89%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>ビルド方法</h2>
+
+<ul>
+<li>
+<p><a href="http://www.boost.org/">boost</a>を利用しています。ビルド前にboostを準備してください。</p>
+
+<p>コンパイラがboostを使えるように、<code>/I</code>オプションを設定してください。Visual Studioを使用している場合は、
+BkCalendarプロジェクトのプロパティページを開き、[構成プロパティ] &gt; [C/C++] &gt; [全般] &gt; [追加のインクルードディレクトリ]で
+boostを展開したフォルダを指定すればよいです。</p>
+</li>
+<li>
+<p>親フォルダにBecky! SDKファイル（BeckyAPI.h, BeckyAPI.cpp, BkCommon.h, BkCommon.cpp）が
+存在することを前提にしています。</p>
+
+<p>Becky! SDKは<a href="http://www.rimarts.co.jp/becky-j.htm">http://www.rimarts.co.jp/becky-j.htm</a> の「Becky! Plug-In SDK」リンクからダウンロードしてください。</p>
+</li>
+</ul>
+
+<h2>
+<a id="ライセンス" class="anchor" href="#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>ライセンス</h2>
+
+<p><a href="https://github.com/nonsava/BkCalendar/blob/master/LICENSE">ライセンスファイル</a>をご覧ください。</p>
+
+<h2>
+<a id="バージョン履歴" class="anchor" href="#%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4" aria-hidden="true"><span class="octicon octicon-link"></span></a>バージョン履歴:</h2>
+
+<ul>
+<li>Version 1.0.0 （2015/06/20）
+
+<ul>
+<li>初回リリース</li>
+</ul>
+</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
