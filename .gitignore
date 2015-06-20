@@ -194,3 +194,7 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+/TestData
+/_TODO.txt
+/_run.bat
+/_for_release
