@@ -43,5 +43,7 @@ Becky!のプラグインフォルダからBkCalendar.dllを削除してくださ
 [ライセンスファイル](https://github.com/nonsava/BkCalendar/blob/master/LICENSE)をご覧ください。
 
 ## バージョン履歴:
+* Version 1.0.1 （2024/11/13）
+  - リモートメールボックスを開くとB2がクラッシュする不具合を修正（Issue #5）
 * Version 1.0.0 （2015/06/20）
   - 初回リリース
