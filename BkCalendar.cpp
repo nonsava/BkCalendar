@@ -149,6 +149,11 @@ extern "C"{
     int WINAPI BKC_OnOpenMail(LPCTSTR lpMailID) {
         // iCalendarを取得する
         LPSTR source = Utils::getBeckyApi().GetSource(lpMailID);
+        if (source == NULL) {
+            // カレンダー情報ウィンドウを閉じる
+            dialog.hide();
+            return 0;
+        }
         CMIMEItem item;
         item.FromString(source);
         VCalendar* calendar = FindCalendar(&item);

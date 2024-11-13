@@ -14,6 +14,7 @@ static const char* TEXT_CALENDAR = "text/calendar";
 /// <summary>コンストラクタ</summary>
 /// <param name="item">MIMEアイテム</param>
 VCalendarParser::VCalendarParser(CMIMEItem* item) : item(item) {
+    calendar = NULL;
 }
 
 /// <summary>MIMEアイテムをパースし、iCalendarを取得する。</summary>
